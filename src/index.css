@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'ARCADECLASSIC';
+  src: local('ARCADECLASSIC'),
+    url('./fonts/ARCADECLASSIC.TTF') format('truetype');
+  font-weight: bold;
+}

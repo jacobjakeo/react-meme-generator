@@ -1,4 +1,6 @@
-import { render, screen } from '@testing-library/react';
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-undef */
+import { expect, test } from '@jest/globals';
 import App from './App';
 
 test('renders learn react link', () => {
