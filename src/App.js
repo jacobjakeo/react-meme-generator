@@ -57,7 +57,7 @@ function App() {
       </div>
       <div className={styles['left-column']}>
         <div>
-          <label htmlFor="topText" className={styles.textInputs}>
+          <label className={styles.textInputs}>
             Top text
             <input
               className={styles.textInputs}
@@ -65,12 +65,11 @@ function App() {
               value={topText}
               onChange={handleInputChange}
               placeholder="CSS"
-              id="topText"
             />
           </label>
         </div>
         <div>
-          <label htmlFor="bottomText" className={styles.textInputs}>
+          <label className={styles.textInputs}>
             Bottom text
             <input
               className={styles.textInputs}
@@ -78,7 +77,6 @@ function App() {
               value={bottomText}
               onChange={handleInputChange}
               placeholder="drives me crazy"
-              id="bottomText"
             />
           </label>
         </div>
