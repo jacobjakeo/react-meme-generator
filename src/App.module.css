@@ -58,12 +58,10 @@
   width: 220px;
   height: 220px;
   margin-bottom: 10px;
-}
-
-.border-image {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 10px;
+  margin-left: 70px;
+  margin-top: 55px;
+  z-index: 3;
+  border-radius: 150px;
 }
 
 html {
@@ -105,4 +103,23 @@ html {
 
 .downloadButton:active {
   transform: scale(0.95);
+}
+
+.pixelSun {
+  background-image: url('./pixelsun.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  width: 350px;
+  height: 350px;
+}
+
+.grid {
+  display: grid;
+}
+
+.pixelSun,
+.meme-image {
+  grid-area: 1/1;
 }

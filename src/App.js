@@ -100,14 +100,17 @@ function App() {
         </select>
       </div>
       <div className={styles['right-column']}>
-        {memeUrl !== '' && (
-          <img
-            src={memeUrl}
-            alt="Generated Meme"
-            className={styles['meme-image']}
-            data-test-id="meme-image"
-          />
-        )}
+        <div className={styles.grid}>
+          <div className={styles.pixelSun} data-test-id="meme-image" />
+          {memeUrl !== '' && (
+            <img
+              src={memeUrl}
+              alt="Generated Meme"
+              className={styles['meme-image']}
+              data-test-id="meme-image"
+            />
+          )}
+        </div>
         <div>
           <button
             onClick={downloadMeme}
