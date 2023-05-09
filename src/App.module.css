@@ -138,3 +138,7 @@ html {
 .pixelSun {
   grid-area: 1/1;
 }
+
+.memeInputs {
+  color: #290f6a;
+}

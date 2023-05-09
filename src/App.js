@@ -6,8 +6,8 @@ import pixelsun from './pixelsun.png';
 function App() {
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
-  const [memeTemplate, setMemeTemplate] = useState('doge');
   const [memeUrl, setMemeUrl] = useState('');
+  const [memeName, setMemeName] = useState('');
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -15,17 +15,15 @@ function App() {
       setTopText(value);
     } else if (name === 'bottomText') {
       setBottomText(value);
+    } else if (name === 'memeName') {
+      setMemeName(value);
     }
   }
 
-  function handleTemplateChange(event) {
-    setMemeTemplate(event.target.value);
-  }
-
   function generateMeme() {
-    const url = `https://api.memegen.link/images/${memeTemplate}/${encodeURIComponent(
-      topText,
-    )}/${encodeURIComponent(bottomText)}.png`;
+    const url = `https://api.memegen.link/images/${encodeURIComponent(
+      memeName,
+    )}/${encodeURIComponent(topText)}/${encodeURIComponent(bottomText)}.png`;
     setMemeUrl(url);
   }
 
@@ -64,7 +62,7 @@ function App() {
               name="topText"
               value={topText}
               onChange={handleInputChange}
-              placeholder="CSS"
+              placeholder="deez"
             />
           </label>
         </div>
@@ -76,7 +74,7 @@ function App() {
               name="bottomText"
               value={bottomText}
               onChange={handleInputChange}
-              placeholder="drives me crazy"
+              placeholder="nuts"
             />
           </label>
         </div>
@@ -90,15 +88,18 @@ function App() {
       </div>
       <div className={styles['middle-column']}>
         <h2>CHOOSE YOUR FIGHTER</h2>
-        <select value={memeTemplate} onChange={handleTemplateChange}>
-          <option value="doge">Doge</option>
-          <option value="spongebob">SpongeBob</option>
-          <option value="drake">Drake</option>
-          <option value="oprah">Oprah</option>
-          <option value="sadfrog">Sad Frog</option>
-          <option value="fine">This is Fine Dog</option>
-          <option value="ugandanknuck">Knuckles</option>
-        </select>
+        <div>
+          <label className={styles.memeInputs}>
+            Meme Name
+            <input
+              className={styles.textInputs}
+              name="memeName"
+              value={memeName}
+              onChange={handleInputChange}
+              placeholder="doge"
+            />
+          </label>
+        </div>
       </div>
       <div className={styles['right-column']}>
         <div className={styles.grid}>
