@@ -58,7 +58,7 @@ function App() {
       <div className={styles['left-column']}>
         <div>
           <label htmlFor="topText" className={styles.textInputs}>
-            TOP TEXT
+            Top text
           </label>
           <br />
           <input
@@ -70,7 +70,7 @@ function App() {
         </div>
         <div>
           <label htmlFor="bottomText" className={styles.textInputs}>
-            BOTTOM TEXT
+            Bottom text
           </label>
           <br />
           <input
