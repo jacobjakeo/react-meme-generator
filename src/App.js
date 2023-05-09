@@ -60,7 +60,6 @@ function App() {
           <label htmlFor="topText" className={styles.textInputs}>
             Top text
           </label>
-          <br />
           <input
             className={styles.textInputs}
             name="topText"
@@ -72,7 +71,6 @@ function App() {
           <label htmlFor="bottomText" className={styles.textInputs}>
             Bottom text
           </label>
-          <br />
           <input
             className={styles.textInputs}
             name="bottomText"
