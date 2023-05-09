@@ -59,24 +59,26 @@ function App() {
         <div>
           <label htmlFor="topText" className={styles.textInputs}>
             Top text
+            <input
+              className={styles.textInputs}
+              name="topText"
+              value={topText}
+              onChange={handleInputChange}
+              placeholder="Top text"
+            />
           </label>
-          <input
-            className={styles.textInputs}
-            name="topText"
-            value={topText}
-            onChange={handleInputChange}
-          />
         </div>
         <div>
           <label htmlFor="bottomText" className={styles.textInputs}>
             Bottom text
+            <input
+              className={styles.textInputs}
+              name="bottomText"
+              value={bottomText}
+              onChange={handleInputChange}
+              placeholder="Bottom text"
+            />
           </label>
-          <input
-            className={styles.textInputs}
-            name="bottomText"
-            value={bottomText}
-            onChange={handleInputChange}
-          />
         </div>
         <div>
           <button
