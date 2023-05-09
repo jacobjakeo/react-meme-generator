@@ -5,4 +5,4 @@
 - There's only a list of my favorite memes, but those can be extended by updating the code on line `92`.
 - After pressing the `Download` button, the meme will be downloaded locally.
 
-Credits: I've used a ARCADECLASSIC font, and images from the Adobe Stock website.
+Credits: I've used a ARCADECLASSIC font, and images from the Adobe Stock website..
