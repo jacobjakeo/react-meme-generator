@@ -55,39 +55,41 @@ function App() {
       <div className={styles.topDiv}>
         <h1 className={styles['font-face-gm']}>MEME GENERATOR</h1>
       </div>
-      <div className={styles['left-column']}>
-        <div>
-          <label htmlFor="topText" className={styles.textInputs}>
-            Top text
-            <input
-              className={styles.textInputs}
-              name="topText"
-              value={topText}
-              onChange={handleInputChange}
-              placeholder="Top text"
+      <form>
+        <div className={styles['left-column']}>
+          <div>
+            <label htmlFor="topText" className={styles.textInputs}>
+              Top text
+              <input
+                className={styles.textInputs}
+                name="topText"
+                value={topText}
+                onChange={handleInputChange}
+                placeholder="CSS"
+              />
+            </label>
+          </div>
+          <div>
+            <label htmlFor="bottomText" className={styles.textInputs}>
+              Bottom text
+              <input
+                className={styles.textInputs}
+                name="bottomText"
+                value={bottomText}
+                onChange={handleInputChange}
+                placeholder="drives me crazy"
+              />
+            </label>
+          </div>
+          <div>
+            <button
+              onClick={generateMeme}
+              id="startButton"
+              className={styles.startButton}
             />
-          </label>
+          </div>
         </div>
-        <div>
-          <label htmlFor="bottomText" className={styles.textInputs}>
-            Bottom text
-            <input
-              className={styles.textInputs}
-              name="bottomText"
-              value={bottomText}
-              onChange={handleInputChange}
-              placeholder="Bottom text"
-            />
-          </label>
-        </div>
-        <div>
-          <button
-            onClick={generateMeme}
-            id="startButton"
-            className={styles.startButton}
-          />
-        </div>
-      </div>
+      </form>
       <div className={styles['middle-column']}>
         <h2>CHOOSE YOUR FIGHTER</h2>
         <select value={memeTemplate} onChange={handleTemplateChange}>
