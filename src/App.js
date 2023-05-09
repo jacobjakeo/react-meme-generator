@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import styles from './App.module.css';
+import pixelsun from './pixelsun.png';
 
 function App() {
   const [topText, setTopText] = useState('');
@@ -101,7 +102,13 @@ function App() {
       </div>
       <div className={styles['right-column']}>
         <div className={styles.grid}>
-          <div className={styles.pixelSun} data-test-id="meme-image" />
+          <img src={pixelsun} className={styles.pixelSun} alt="pixel-sun" />
+          <img
+            src="https://api.memegen.link/images/kermit.jpg"
+            className={styles.loadImage}
+            data-test-id="meme-image"
+            alt="kermit"
+          />
           {memeUrl !== '' && (
             <img
               src={memeUrl}
