@@ -57,32 +57,30 @@ function App() {
       </div>
       <div className={styles['left-column']}>
         <div>
-          <form>
-            <label htmlFor="topText" className={styles.textInputs}>
-              Top text
-              <input
-                className={styles.textInputs}
-                name="topText"
-                value={topText}
-                onChange={handleInputChange}
-                placeholder="CSS"
-              />
-            </label>
-          </form>
+          <label htmlFor="topText" className={styles.textInputs}>
+            Top text
+            <input
+              className={styles.textInputs}
+              name="topText"
+              value={topText}
+              onChange={handleInputChange}
+              placeholder="CSS"
+              id="topText"
+            />
+          </label>
         </div>
         <div>
-          <form>
-            <label htmlFor="bottomText" className={styles.textInputs}>
-              Bottom text
-              <input
-                className={styles.textInputs}
-                name="bottomText"
-                value={bottomText}
-                onChange={handleInputChange}
-                placeholder="drives me crazy"
-              />
-            </label>
-          </form>
+          <label htmlFor="bottomText" className={styles.textInputs}>
+            Bottom text
+            <input
+              className={styles.textInputs}
+              name="bottomText"
+              value={bottomText}
+              onChange={handleInputChange}
+              placeholder="drives me crazy"
+              id="bottomText"
+            />
+          </label>
         </div>
         <div>
           <button
