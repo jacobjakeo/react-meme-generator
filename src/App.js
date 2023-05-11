@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './App.module.css';
 import pixelsun from './pixelsun.png';
 
@@ -48,6 +48,10 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    downloadMeme();
+  }, [memeUrl]);
+
   return (
     <div className={styles.App}>
       <div className={styles.topDiv}>
@@ -78,13 +82,6 @@ function App() {
             />
           </label>
         </div>
-        <div>
-          <button
-            onClick={generateMeme}
-            id="startButton"
-            className={styles.startButton}
-          />
-        </div>
       </div>
       <div className={styles['middle-column']}>
         <h2>CHOOSE YOUR FIGHTER</h2>
@@ -100,22 +97,30 @@ function App() {
             />
           </label>
         </div>
+        <div>
+          <button
+            onClick={generateMeme}
+            id="startButton"
+            className={styles.startButton}
+          />
+        </div>
       </div>
       <div className={styles['right-column']}>
         <div className={styles.grid}>
           <img src={pixelsun} className={styles.pixelSun} alt="pixel-sun" />
-          <img
-            src="https://api.memegen.link/images/kermit.jpg"
-            className={styles.loadImage}
-            data-test-id="meme-image"
-            alt="kermit"
-          />
-          {memeUrl !== '' && (
+          {memeUrl ? (
             <img
               src={memeUrl}
               alt="Generated Meme"
               className={styles['meme-image']}
               data-test-id="meme-image"
+            />
+          ) : (
+            <img
+              src="https://api.memegen.link/images/kermit.jpg"
+              className={styles.loadImage}
+              data-test-id="meme-image"
+              alt="kermit"
             />
           )}
         </div>
