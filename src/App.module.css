@@ -69,3 +69,10 @@
   color: #290f6a;
   text-align: center;
 }
+
+.pixelsun {
+  width: 200px;
+  height: 200px;
+  position: center;
+  margin-bottom: 50px;
+}

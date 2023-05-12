@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <div className={styles.MainText}>React Meme Generator</div>
+      <div className={styles.MainText}>Meme Generator</div>
       <div>
         <div>
           <div className={styles.MemeTemplateText}>
@@ -66,6 +66,7 @@ function App() {
           <div className={styles.MemeTemplateText}>
             <label>
               Bottom text
+              <br />
               <input
                 value={bottomText}
                 onChange={(event) => {
