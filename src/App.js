@@ -1,5 +1,5 @@
 import FileSaver from 'file-saver';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './App.module.css';
 
 function App() {
