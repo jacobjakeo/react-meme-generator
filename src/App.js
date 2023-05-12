@@ -30,6 +30,8 @@ function App() {
         <div>
           <div className={styles.MemeTemplateText}>
             <label>
+              <a className={styles.FighterText}>Choose your Fighter:</a>
+              <br />
               Meme template
               <input
                 value={memeTemplate}
