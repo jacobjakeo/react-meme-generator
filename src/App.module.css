@@ -13,50 +13,11 @@
   background-size: contain;
 }
 
-.font-face-gm {
+.MainText {
   font-family: 'ARCADECLASSIC', sans-serif;
   font-size: 10vh;
-  color: #290f6a;
-}
-
-.topDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 80px;
-  height: 100px;
-  background-color: transparent;
-  z-index: 999;
-}
-
-.left-column,
-.middle-column,
-.right-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  margin-left: 150px;
-  margin-right: 100px;
-}
-
-.middle-column {
-  margin-bottom: 50px;
-  margin-left: 150px;
-}
-
-.textInputs {
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
-
-.startButton,
-.downloadButton {
-  margin-top: 10px;
-}
-
-html {
-  background-color: #25426b;
+  color: aqua;
+  text-align: center;
 }
 
 .startButton {
@@ -71,6 +32,7 @@ html {
   cursor: pointer;
   padding: 0;
   background-color: transparent;
+  color: transparent;
 }
 
 .startButton:active {
@@ -90,55 +52,20 @@ html {
   padding: 0;
   background-color: transparent;
   color: transparent;
+  margin-right: 80px;
 }
 
 .downloadButton:active {
   transform: scale(0.95);
 }
 
-.loadImage {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
+.memeTemplate {
   width: 150px;
   height: 150px;
-  margin-bottom: 10px;
-  margin-right: 0px;
-  margin-left: 100px;
-  margin-top: 150px;
+  margin-bottom: 20px;
 }
 
-.meme-image {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
-  margin-right: 0px;
-  margin-left: 100px;
-  margin-top: 150px;
-  z-index: 3;
-}
-
-.pixelSun {
-  width: 350px;
-  height: 350px;
-  margin-bottom: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top: 55px;
-  z-index: 1;
-}
-
-.grid {
-  display: grid;
-}
-
-.loadImage,
-.meme-image,
-.pixelSun {
-  grid-area: 1/1;
-}
-
-.memeInputs {
+.MemeTemplateText {
   color: #290f6a;
+  text-align: center;
 }
